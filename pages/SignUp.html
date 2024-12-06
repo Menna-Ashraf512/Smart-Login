@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Smart Login is a page where you can login to your account or register your account with us "
+        name="description">
+    <meta content="Smart Login, Login, Register, Account, Sign Up, Sign In" name="Keywords">
+    <title>Sign Up</title>
+    <!-- favicon -->
+    <link rel="icon" href="../favicon/icons8-login-rounded-100.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<section class="w-50 mx-auto text-center mt-5  p-5" id="signUpBx">
+    <div class=" container">
+        <h1 class="my-4">Smart Login System</h1>
+        <form id="signUpForm">
+            <input type="text" placeholder="Enter your name" autocomplete="username" id="nameInput" class="form-control my-3">
+            <input type="email" placeholder="Enter your email" autocomplete="email"  id="emailInput" class="form-control my-3">
+            <input type="password" placeholder="Enter your password"  autocomplete="current-password" id="passwordInput" class="form-control my-3">
+            <p class="text-danger d-none" id="errorMessage">All fields are required</p>
+            <button type="submit" class="btn  w-100 mt-4" id="signUpBtn">Sign Up</button>
+        </form>
+        <p id="signIn" class="my-3">You have an account? <span>SignIn</span> </p>
+    </div>
+</section>
+<section class="w-50 mx-auto text-center mt-5  p-5 d-none" id="signInBx">    
+        <div class=" container">
+        <h1 class="my-4">Smart Login System</h1>
+        <form id="signInForm">
+            <input type="email" placeholder="Enter your email" autocomplete="email"  id="userEmailInput" class="form-control my-3">
+            <input type="password" placeholder="Enter your password"  autocomplete="current-password" id="userPasswordInput" class="form-control my-3">
+            <p class="text-danger d-none" id="validationMessage">Invalid email or password</p>
+            <button type="submit" class="btn  w-100 mt-4" id="loginBtn">Login</button>
+        </form>
+        <p id="signUp" class="my-3">Don't have an account ? <span>SignUp</span></p>
+    </div>
+</section>
+
+
+
+
+<div class="d-none" id="loggedIn">
+    <nav class="navbar navbar-expand-lg navbar-dark py-2 w-100">
+        <div class="container">
+            <div class="d-flex justify-content-between w-85 m-auto">
+                <a class="text-uppercase navbar-brand">smart login</a>
+                <a href="../pages/SignUp.html" class="costum-btn btn">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <section class="w-50 text-center position-absolute  top-50 start-50 translate-middle p-5" id="welcomeBx">    
+        <div class="container">
+            <h1></h1>
+        </div>
+    </section>
+</div>
+    <!-- bootstrap -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- javascript -->
+    <script src="../js/SignUp.js"></script>
+</body>
+
+</html>

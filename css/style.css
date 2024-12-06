@@ -1,0 +1,81 @@
+/* Global */
+:root{
+    --main-color:#24353F;
+    --second-color:#17A2B8;
+    --color-btn: #FFC107;
+    --text-main-color:#fff;
+}
+.w-85{
+    width: 85% ;
+}
+body{
+    background-color: var(--main-color);
+
+}
+
+h1{
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+
+/*---- main----*/
+
+section{
+    background-color: var(--main-color);
+    box-shadow:   black 0 0 20px 5px;;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #80bdff;
+    background-color: var(--main-color);
+    color: var(--text-main-color);
+}
+.form-control{
+color: var(--text-main-color);
+box-shadow: none;
+border-color:var(--text-main-color);
+background-color: var(--main-color);
+}
+.form-control::placeholder{
+    color:var(--text-main-color);
+}
+
+.btn{
+    border-color: var(--second-color);
+    color: var(--second-color);
+}
+.btn:hover{
+    background-color: var(--second-color);
+    color: var(--text-main-color);
+}
+p{
+    color:var(--text-main-color);
+}
+p span{
+    color:var(--text-main-color);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+p span:hover{
+    text-decoration: underline;
+}
+.navbar{
+    box-shadow:  0px 9px 14px 0px rgba(0, 0, 0, 0.543);
+}
+.costum-btn{
+    border-color: var(--color-btn);
+    color: var(--text-main-color);
+    background-color: transparent;
+}
+.costum-btn:hover{
+    border-color: var(--color-btn);
+    color: var(--text-main-color);
+    background-color: var(--color-btn);
+}
+
+.navbar-brand{
+    cursor: pointer;
+}
